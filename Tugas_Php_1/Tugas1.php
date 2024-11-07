@@ -15,21 +15,21 @@
             </div>
             <div class="isi">
                 <form method="post">
-                    <b>ANGKA 1: <input type="number" name="num1"><br><br></b>
-                    <b>ANGKA 2: <input type="number" name="num2"><br><br></b>
-                    <b>ANGKA 3: <input type="number" name="num3"><br><br></b>
+                    <b>X: <input id="input" type="number" name="num1" placeholder="Masukkan Sesuai Rumus"><br><br></b>
+                    <b>Y: <input id="input" type="number" name="num2" placeholder="Masukkan Sesuai Rumus"><br><br></b>
+                    <b>Z: <input id="input" type="number" name="num3" placeholder="Masukkan Sesuai Rumus"><br><br></b>
                     <div class="nav-operator">
                         <button class="button" type="button">
                             OPERATOR
                         </button>
                         <ul class="drop-down">
-                            <li><button type="submit" name="operation" value="Kubus">Luas Permukaan Kubus <br> Luas Permukaan=6×s²</button></li>
-                            <li><button type="submit" name="operation" value="Balok">Luas Permukaan Balok <br> L= 2 × (p × l + p × t + l × t)</button></li>
-                            <li><button type="submit" name="operation" value="Prisma_Segitiga">Volume Prisma Segitiga <br> V = (1/2 × Alas Segitiga × Tinggi Segitiga) × Tinggi Prisma</button></li>
-                            <li><button type="submit" name="operation" value="Limas_Segiempat">Volume Limas Segiempat <br> V = 1/3 × (Panjang × Lebar) × Tinggi</button></li>
-                            <li><button type="submit" name="operation" value="Tabung">Volume Tabung <br> V = πr²t</button></li>
-                            <li><button type="submit" name="operation" value="Kerucut">Luas Permukaan Kerucut <br> L = (π r s) + (π r²)</button></li>
-                            <li><button type="submit" name="operation" value="Bola">Luas Permukaan Bola <br> L = 4πr²</button></li>
+                            <li><button type="submit" name="operation" value="Kubus">Luas Permukaan Kubus <br> [L = 6 × X²]</button></li>
+                            <li><button type="submit" name="operation" value="Balok">Luas Permukaan Balok <br> [L= 2 × (X × Y + X × Z + Y × Z)]</button></li>
+                            <li><button type="submit" name="operation" value="Prisma_Segitiga">Volume Prisma Segitiga <br> [V = (1/2 × X × Y) × Z]</button></li>
+                            <li><button type="submit" name="operation" value="Limas_Segiempat">Volume Limas Segiempat <br> [V = 1/3 × (X × Y) × Z]</button></li>
+                            <li><button type="submit" name="operation" value="Tabung">Volume Tabung <br> [V = π × X² × Y]</button></li>
+                            <li><button type="submit" name="operation" value="Kerucut">Luas Permukaan Kerucut <br> [L = (π × X × Y) + (π × X²)]</button></li>
+                            <li><button type="submit" name="operation" value="Bola">Luas Permukaan Bola <br> [L = 4 × π × X²]</button></li>
                         </ul>
                     </div>
                     <button class="buttonclear" type="submit" name="clear" value="true">HAPUS</button>
