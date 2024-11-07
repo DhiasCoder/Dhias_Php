@@ -51,7 +51,7 @@
                                 echo "<div class='result'>Luas Permukaan Balok: " . ((2 * $num1 * $num2) + (2 * $num1 * $num3) + (2 * $num2 * $num3)) . "</div>";
                             } elseif ($_POST['operation'] == 'Prisma_Segitiga') {
                                 $luas_alas = 0.5 * $num1 * $num2;
-                                echo "<div class='result'>Luas alas Prisma: " . $luas_alas . "<br>" . "</div>";
+                                echo "<div class='result'>Luas Alas Prisma: " . $luas_alas . "<br>" . "</div>";
                                 $volume = $luas_alas * $num3;
                                 echo "<div class='result'>Volume Prisma: " . $volume . "</div>";
                             } elseif ($_POST['operation'] == 'Limas_Segiempat') {
