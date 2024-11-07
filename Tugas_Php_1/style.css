@@ -1,0 +1,115 @@
+body {
+  background-color: grey;
+}
+
+.container {
+  width: 250px;
+  height: 500px;
+  background-color: wheat;
+  border: outset 4px grey;
+}
+
+.isi {
+  margin: 10px;
+}
+
+.output-box {
+  width: 100px;
+  height: 50px;
+  border: 3px solid #000;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 0.5rem;
+}
+
+.button {
+  background-color: grey;
+  color: white;
+  border: inset 3px black;
+  font-size: 10pt;
+  margin: 4px;
+  padding: 5px;
+  font-weight: bold;
+  width: 200px;
+  text-align: center;
+  display: block;
+  border-radius: 0.5rem;
+}
+
+.button:hover {
+  background-color: black;
+  box-shadow: 0 0 25px rgb(45, 202, 45);
+  border: 3px solid rgb(45, 202, 45);
+}
+
+.buttonclear {
+  background-color: red;
+  color: white;
+  border: inset 3px black;
+  font-size: 10pt;
+  margin: 4px;
+  padding: 5px;
+  font-weight: bold;
+  width: 200px;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+
+.buttonclear:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgb(45, 202, 45);
+  border: 3px solid rgb(45, 202, 45);
+}
+
+.nav-operator {
+  position: relative;
+  display: inline-block;
+}
+
+.drop-down {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background: antiquewhite;
+  color: black;
+  box-shadow: 0 4px 12px black;
+  border-radius: 0.5rem;
+  font-size: 12px;
+  display: none;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  width: 100%;
+  z-index: 1;
+}
+
+.nav-operator:hover .drop-down {
+  display: block;
+}
+
+.drop-down li {
+  padding: 5px;
+  text-align: center;
+}
+
+.drop-down li button {
+  background: none;
+  border: none;
+  color: inherit;
+  padding: 5px;
+  width: 100%;
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 0.5rem;
+}
+
+.drop-down li button:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.02);
+  box-shadow: 0 0 25px rgb(45, 202, 45);
+  border: 3px solid rgb(45, 202, 45);
+  font-weight: bold;
+  border-radius: 0.5rem;
+}
