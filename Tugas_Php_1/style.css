@@ -82,7 +82,7 @@ body {
   list-style-type: none;
   width: 100%;
   z-index: 1;
-  max-height: 70px; /* Menambahkan batasan tinggi dropdown */
+  max-height: 100px; /* Menambahkan batasan tinggi dropdown */
   overflow-y: auto; /* Menambahkan scroll jika item melebihi max-height */
 }
 
@@ -149,4 +149,18 @@ input {
   padding: 3px;
   border: solid 1px #ccc;
   box-sizing: border-box;
+}
+
+.whatsapp-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #25d366;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.whatsapp-button:hover {
+  background-color: #1ebd55;
 }
