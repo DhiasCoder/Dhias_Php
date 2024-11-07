@@ -66,16 +66,6 @@
                         }
                     }
                     ?>
-                    <?php
-                    if (!empty($result)) {
-                        echo "<div class='result'>$result</div>";
-                    }
-                    ?>
-                    <?php if (!empty($result)): ?>
-                        <a href="https://api.whatsapp.com/send?text=<?php echo urlencode($result); ?>" target="_blank" class="whatsapp-button">
-                            Kirim ke WhatsApp
-                        </a>
-                    <?php endif; ?>
                 </div>
                 <div class="footer">Create By &copy;Dhias Habibi</div>
             </div>
