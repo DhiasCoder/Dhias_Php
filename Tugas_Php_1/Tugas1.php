@@ -23,8 +23,8 @@
                             OPERATOR
                         </button>
                         <ul class="drop-down">
-                            <li><button type="submit" name="operation" value="Kubus">Luas Permukaan Kubus</button></li>
-                            <li><button type="submit" name="operation" value="Balok">Luas Permukaan Balok <br> L=2 × (p × l + p × t + l × t)</button></li>
+                            <li><button type="submit" name="operation" value="Kubus">Luas Permukaan Kubus <br> Luas Permukaan=6×s²</button></li>
+                            <li><button type="submit" name="operation" value="Balok">Luas Permukaan Balok <br> L= 2 × (p × l + p × t + l × t)</button></li>
                             <li><button type="submit" name="operation" value="Prisma_Segitiga">Volume Prisma Segitiga <br> V = (1/2 × Alas Segitiga × Tinggi Segitiga) × Tinggi Prisma</button></li>
                             <li><button type="submit" name="operation" value="Limas_Segiempat">Volume Limas Segiempat <br> V = 1/3 × (Panjang × Lebar) × Tinggi</button></li>
                             <li><button type="submit" name="operation" value="Tabung">Volume Tabung <br> V = πr²t</button></li>
