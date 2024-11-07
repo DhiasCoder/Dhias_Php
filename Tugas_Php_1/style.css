@@ -119,6 +119,7 @@ body {
   font-weight: bold;
   font-size: 12pt;
   font-family: sans-serif;
+  text-shadow: 3px 4px 2px whitesmoke;
 }
 .isi b {
   font-weight: bold;
@@ -129,5 +130,12 @@ body {
   font-weight: bold;
   font-size: 12pt;
   font-family: sans-serif;
+}
+
+.footer {
+  padding-top: 220px;
+  text-align: center;
+  font-size: 16pt;
+  font-weight: bold;
   text-shadow: 3px 4px 2px whitesmoke;
 }
