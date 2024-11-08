@@ -128,11 +128,9 @@
                             $volume = $luas_alas * $num3;
                             echo "<div class='result'>Volume Prisma: " . $volume . "</div>";
                         } elseif ($operation == 'Limas_Segiempat_Persegi') {
-                            $luas_alas1 = $num1 * $num1;
-                            echo "<div class='result'>Volume Limas: " . (1 / 3 * ($luas_alas1 * $num3)) . "</div>";
+                            echo "<div class='result'>Volume Limas: " . (1 / 3 * $num1 * $num1 * $num2) . "</div>";
                         } elseif ($operation == 'Limas_Segiempat_Persegi_Panjang') {
-                            $luas_alas2 = $num1 * $num2;
-                            echo "<div class='result'>Volume Limas: " . (1 / 3 * ($luas_alas2 * $num2)) . "</div>";
+                            echo "<div class='result'>Volume Limas: " . (1 / 3 * $num1 * $num2 * $num3) . "</div>";
                         } elseif ($operation == 'Tabung') {
                             echo "<div class='result'>Volume Tabung: " . (3.14 * $num1 * $num1 * $num2) . "</div>";
                         } elseif ($operation == 'Kerucut') {
