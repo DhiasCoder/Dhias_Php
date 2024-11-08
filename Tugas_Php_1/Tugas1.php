@@ -1,3 +1,6 @@
+<!-- Nama: Muhammad Dhias Habibi
+Nim: 23051450246
+Kelas: 2383B -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -62,19 +65,6 @@
                     }
                     ?>
 
-                    <!-- Dropdown untuk memilih operator -->
-                    <label for="operation"><b>Pilih Operator:</b></label>
-                    <select name="operation" id="operation">
-                        <option value="Kubus" <?php if ($operation == 'Kubus') echo 'selected'; ?>>Luas Permukaan Kubus</option>
-                        <option value="Balok" <?php if ($operation == 'Balok') echo 'selected'; ?>>Luas Permukaan Balok</option>
-                        <option value="Prisma_Segitiga" <?php if ($operation == 'Prisma_Segitiga') echo 'selected'; ?>>Volume Prisma Segitiga</option>
-                        <option value="Limas_Segiempat" <?php if ($operation == 'Limas_Segiempat') echo 'selected'; ?>>Volume Limas Segiempat</option>
-                        <option value="Tabung" <?php if ($operation == 'Tabung') echo 'selected'; ?>>Volume Tabung</option>
-                        <option value="Kerucut" <?php if ($operation == 'Kerucut') echo 'selected'; ?>>Luas Permukaan Kerucut</option>
-                        <option value="Bola" <?php if ($operation == 'Bola') echo 'selected'; ?>>Luas Permukaan Bola</option>
-                    </select>
-                    <button type="submit" name="select_operator">Pilih Operator</button><br><br>
-
                     <!-- Tampilkan deskripsi rumus yang dipilih -->
                     <div><b><?php echo $formulaDescription; ?></b></div><br>
 
@@ -86,9 +76,23 @@
                     <?php if ($labelZ != "-") : ?>
                         <b><?php echo $labelZ; ?></b> <input type="number" name="num3" placeholder="Masukkan Sesuai Rumus"><br><br>
                     <?php endif; ?>
-
+                    <!-- Dropdown untuk memilih operator -->
+                    <div class="nav-operator">
+                        <button class="button" type="button">
+                            OPERATOR
+                        </button>
+                        <ul class="drop-down">
+                            <li><button type="submit" name="operation" value="Kubus" <?php if ($operation == 'Kubus') echo 'selected'; ?>>Luas Permukaan Kubus</button></li>
+                            <li><button type="submit" name="operation" value="Balok" <?php if ($operation == 'Balok') echo 'selected'; ?>>Luas Permukaan Balok</button></li>
+                            <li><button type="submit" name="operation" value="Prisma_Segitiga" <?php if ($operation == 'Prisma_Segitiga') echo 'selected'; ?>>Volume Prisma Segitiga</button></li>
+                            <li><button type="submit" name="operation" value="Limas_Segiempat" <?php if ($operation == 'Limas_Segiempat') echo 'selected'; ?>>Volume Limas Segiempat</button></li>
+                            <li><button type="submit" name="operation" value="Tabung"><?php if ($operation == 'Tabung') echo 'selected'; ?>Volume Tabung</button></li>
+                            <li><button type="submit" name="operation" value="Kerucut"><?php if ($operation == 'Kerucut') echo 'selected'; ?>Luas Permukaan Kerucut</button></li>
+                            <li><button type="submit" name="operation" value="Bola"><?php if ($operation == 'Bola') echo 'selected'; ?>Luas Permukaan Bola </button></li>
+                        </ul>
+                    </div>
                     <!-- Tombol Hitung -->
-                    <button class="button" type="submit" name="calculate">Hitung</button>
+                    <button class="button" type="submit" name="calculate">HITUNG</button>
                     <button class="buttonclear" type="submit" name="clear" value="true">HAPUS</button>
                 </form>
 
