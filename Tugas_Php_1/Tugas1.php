@@ -20,7 +20,7 @@
                     $labelX = "X:";
                     $labelY = "Y:";
                     $labelZ = "Z:";
-                    $formulaDescription = "Pilih rumus untuk melihat penjelasan.";
+                    $formulaDescription = "PILIH RUMUS UNTUK MELIHAT PENJELASAN.";
                     $operation = isset($_POST['operation']) ? $_POST['operation'] : '';
 
                     // Perbarui label sesuai dengan operator yang dipilih
