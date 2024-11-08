@@ -26,7 +26,7 @@
                     // Perbarui label sesuai dengan operator yang dipilih
                     if (isset($_POST['clear'])) {
                         echo "";
-                    } else{
+                    } else {
                         if ($operation == 'Kubus') {
                             $labelX = "Sisi (s)";
                             $labelY = "-";
@@ -42,11 +42,16 @@
                             $labelY = "Tinggi Segitiga (t)";
                             $labelZ = "Tinggi Prisma";
                             $formulaDescription = "Volume Prisma Segitiga: V = (1/2 × a × t) × Tinggi Prisma";
-                        } elseif ($operation == 'Limas_Segiempat') {
-                            $labelX = "Luas Alas (L)";
+                        } elseif ($operation == 'Limas_Segiempat_Persegi') {
+                            $labelX = "Sisi (s)";
                             $labelY = "Tinggi (t)";
                             $labelZ = "-";
-                            $formulaDescription = "Volume Limas Segiempat: V = 1/3 × L × t";
+                            $formulaDescription = "Volume Limas Segiempat: V = 1/3 × s² × t";
+                        } elseif ($operation == 'Limas_Segiempat_Persegi_Panjang') {
+                            $labelX = "Panjang (p)";
+                            $labelY = "Lebar (l)";
+                            $labelZ = "Tinggi (t)";
+                            $formulaDescription = "Volume Limas Segiempat: V = 1/3 × p × l × t";
                         } elseif ($operation == 'Tabung') {
                             $labelX = "Jari-jari (r)";
                             $labelY = "Tinggi (t)";
@@ -84,13 +89,14 @@
                     <!-- Dropdown untuk memilih operator -->
                     <div class="nav-operator">
                         <button class="button" type="button">
-                            OPERATOR
+                            PILIH OPERATOR
                         </button>
                         <ul class="drop-down">
                             <li><button type="submit" name="operation" value="Kubus">Luas Permukaan Kubus</button></li>
                             <li><button type="submit" name="operation" value="Balok">Luas Permukaan Balok</button></li>
                             <li><button type="submit" name="operation" value="Prisma_Segitiga">Volume Prisma Segitiga</button></li>
-                            <li><button type="submit" name="operation" value="Limas_Segiempat">Volume Limas Segiempat</button></li>
+                            <li><button type="submit" name="operation" value="Limas_Segiempat_Persegi">Volume Limas Segiempat (Persegi)</button></li>
+                            <li><button type="submit" name="operation" value="Limas_Segiempat_Persegi_Panjang">Volume Limas Segiempat (Persegi Panjang)</button></li>
                             <li><button type="submit" name="operation" value="Tabung">Volume Tabung</button></li>
                             <li><button type="submit" name="operation" value="Kerucut">Luas Permukaan Kerucut</button></li>
                             <li><button type="submit" name="operation" value="Bola">Luas Permukaan Bola</button></li>
@@ -121,8 +127,12 @@
                             $luas_alas = 0.5 * $num1 * $num2;
                             $volume = $luas_alas * $num3;
                             echo "<div class='result'>Volume Prisma: " . $volume . "</div>";
-                        } elseif ($operation == 'Limas_Segiempat') {
-                            echo "<div class='result'>Volume Limas: " . (1 / 3 * ($num1) * $num2) . "</div>";
+                        } elseif ($operation == 'Limas_Segiempat_Persegi') {
+                            $luas_alas1 = $num1 * $num1;
+                            echo "<div class='result'>Volume Limas: " . (1 / 3 * ($luas_alas1 * $num3)) . "</div>";
+                        } elseif ($operation == 'Limas_Segiempat_Persegi_Panjang') {
+                            $luas_alas2 = $num1 * $num2;
+                            echo "<div class='result'>Volume Limas: " . (1 / 3 * ($luas_alas2 * $num2)) . "</div>";
                         } elseif ($operation == 'Tabung') {
                             echo "<div class='result'>Volume Tabung: " . (3.14 * $num1 * $num1 * $num2) . "</div>";
                         } elseif ($operation == 'Kerucut') {
