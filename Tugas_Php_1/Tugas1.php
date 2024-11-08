@@ -82,8 +82,8 @@ Kelas: 2383B -->
                             OPERATOR
                         </button>
                         <ul class="drop-down">
-                            <li><button type="submit" name="operation" value="Kubus" <?php if ($operation == 'Kubus') echo 'selected'; ?>>Luas Permukaan Kubus</button></li>
-                            <li><button type="submit" name="operation" value="Balok" <?php if ($operation == 'Balok') echo 'selected'; ?>>Luas Permukaan Balok</button></li>
+                            <li><button type="submit" name="operation" value="Kubus">Luas Permukaan Kubus</button></li>
+                            <li><button type="submit" name="operation" value="Balok">Luas Permukaan Balok</button></li>
                             <li><button type="submit" name="operation" value="Prisma_Segitiga" <?php if ($operation == 'Prisma_Segitiga') echo 'selected'; ?>>Volume Prisma Segitiga</button></li>
                             <li><button type="submit" name="operation" value="Limas_Segiempat" <?php if ($operation == 'Limas_Segiempat') echo 'selected'; ?>>Volume Limas Segiempat</button></li>
                             <li><button type="submit" name="operation" value="Tabung"><?php if ($operation == 'Tabung') echo 'selected'; ?>Volume Tabung</button></li>
