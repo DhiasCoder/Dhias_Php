@@ -94,12 +94,12 @@
                         <ul class="drop-down">
                             <li><button type="submit" name="operation" value="Kubus">Luas Permukaan Kubus</button></li>
                             <li><button type="submit" name="operation" value="Balok">Luas Permukaan Balok</button></li>
+                            <li><button type="submit" name="operation" value="Kerucut">Luas Permukaan Kerucut</button></li>
+                            <li><button type="submit" name="operation" value="Bola">Luas Permukaan Bola</button></li>
                             <li><button type="submit" name="operation" value="Prisma_Segitiga">Volume Prisma Segitiga</button></li>
                             <li><button type="submit" name="operation" value="Limas_Segiempat_Persegi">Volume Limas Segiempat (Persegi)</button></li>
                             <li><button type="submit" name="operation" value="Limas_Segiempat_Persegi_Panjang">Volume Limas Segiempat (Persegi Panjang)</button></li>
                             <li><button type="submit" name="operation" value="Tabung">Volume Tabung</button></li>
-                            <li><button type="submit" name="operation" value="Kerucut">Luas Permukaan Kerucut</button></li>
-                            <li><button type="submit" name="operation" value="Bola">Luas Permukaan Bola</button></li>
                         </ul>
                     </div>
 
@@ -141,7 +141,12 @@
                     }
                     ?>
                 </div>
-                <div class="footer">Create By &copy;Dhias Habibi</div>
+                <?php
+                $NAMA = "Muhammad Dhias Habibi";
+                $NIM = "23051450246";
+                $KELAS = "2383B";
+                ?>
+                <div class="footer">Create By: <br> &copy;<?php echo $NAMA?><br><?php echo $NIM?><br><?php echo $KELAS?></div>
             </div>
         </div>
     </center>

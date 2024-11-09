@@ -4,7 +4,7 @@ body {
 
 .container {
   width: 300px;
-  height: 610px;
+  height: 650px;
   background-color: wheat;
   border: outset 4px grey;
 }
@@ -136,7 +136,7 @@ body {
 }
 
 .footer {
-  padding-top: 60px;
+  padding-top: 75px;
   text-align: center;
   font-size: 16pt;
   font-weight: bold;
