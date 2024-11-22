@@ -141,12 +141,6 @@
                     }
                     ?>
                 </div>
-                <?php
-                $NAMA = "Muhammad Dhias Habibi";
-                $NIM = "23051450246";
-                $KELAS = "2383B";
-                ?>
-                <div class="footer">Create By: <br> &copy;<?php echo $NAMA?><br><?php echo $NIM?><br><?php echo $KELAS?></div>
             </div>
         </div>
     </center>
